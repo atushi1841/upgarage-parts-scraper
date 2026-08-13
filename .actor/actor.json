@@ -1,0 +1,101 @@
+{
+  "actorSpecification": 1,
+  "name": "upgarage-parts-scraper",
+  "title": "Up Garage Japan Used Car & Bike Parts Scraper",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "input": "./INPUT_SCHEMA.json",
+  "outputSchema": {
+    "actorOutputSchemaVersion": 1,
+    "title": "Up Garage Used Parts",
+    "description": "Used car & motorcycle parts listings from upgarage.com (Japan)",
+    "type": "object",
+    "properties": {
+      "itemId": {
+        "title": "Item ID",
+        "type": "string",
+        "description": "Stock ID at Up Garage",
+        "template": "{{itemId}}"
+      },
+      "title": {
+        "title": "Title",
+        "type": "string",
+        "description": "Part name",
+        "template": "{{title}}"
+      },
+      "shop": {
+        "title": "Shop",
+        "type": "string",
+        "description": "Shop name",
+        "template": "{{shop}}"
+      },
+      "price": {
+        "title": "Price (JPY)",
+        "type": "string",
+        "description": "Tax-included price in yen",
+        "template": "{{price}}"
+      },
+      "imageUrl": {
+        "title": "Image URL",
+        "type": "string",
+        "description": "Part image URL",
+        "template": "{{imageUrl}}"
+      },
+      "detailUrl": {
+        "title": "Detail URL",
+        "type": "string",
+        "description": "Listing page URL",
+        "template": "{{detailUrl}}"
+      },
+      "year": {
+        "title": "Year",
+        "type": "string",
+        "description": "Manufacture year",
+        "template": "{{year}}"
+      },
+      "category": {
+        "title": "Category",
+        "type": "string",
+        "description": "Main category (car AV, bike parts, tires, etc.)",
+        "template": "{{category}}"
+      },
+      "subCategory": {
+        "title": "Sub Category",
+        "type": "string",
+        "description": "Detailed sub category",
+        "template": "{{subCategory}}"
+      },
+      "vehicleType": {
+        "title": "Vehicle Type",
+        "type": "string",
+        "description": "Vehicle type (car / motorcycle / bicycle)",
+        "template": "{{vehicleType}}"
+      },
+      "condition": {
+        "title": "Condition",
+        "type": "string",
+        "description": "Item condition code",
+        "template": "{{condition}}"
+      },
+      "source": {
+        "title": "Source",
+        "type": "string",
+        "description": "upgarage",
+        "template": "{{source}}"
+      },
+      "scrapedAt": {
+        "title": "Scraped At",
+        "type": "string",
+        "description": "Scrape timestamp",
+        "template": "{{scrapedAt}}"
+      }
+    },
+    "required": [
+      "itemId",
+      "title",
+      "price"
+    ]
+  }
+}

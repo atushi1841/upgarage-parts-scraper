@@ -1,0 +1,54 @@
+{
+  "title": "Up Garage Japan Used Parts Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchKeyword": {
+      "title": "検索キーワード",
+      "type": "string",
+      "description": "パーツ名・車種名を指定（例: ホイール, マフラー, レカロ）。空欄で全パーツスキャン",
+      "prefill": "",
+      "editor": "textfield"
+    },
+    "statsMode": {
+      "title": "相場集計モード",
+      "type": "boolean",
+      "description": "trueでキーワード別の価格相場統計のみを返す（検索+集計APIモード）",
+      "default": false,
+      "editor": "checkbox"
+    },
+    "statsKeyword": {
+      "title": "集計キーワード",
+      "type": "string",
+      "description": "パーツ名（例: ホイール）。このキーワードを含む商品のみを集計",
+      "prefill": "",
+      "editor": "textfield"
+    },
+    "maxItems": {
+      "title": "最大取得件数",
+      "type": "integer",
+      "description": "取得する最大商品数",
+      "default": 100,
+      "minimum": 1,
+      "editor": "number"
+    },
+    "maxPages": {
+      "title": "最大ページ数",
+      "type": "integer",
+      "description": "巡回する最大ページ数（1ページ=20件）",
+      "default": 5,
+      "minimum": 1,
+      "editor": "number"
+    },
+    "proxyConfiguration": {
+      "title": "Proxy設定",
+      "type": "object",
+      "editor": "proxy",
+      "description": "Apifyプロキシ設定（自動）",
+      "default": {
+        "useApifyProxy": true
+      }
+    }
+  },
+  "required": []
+}
