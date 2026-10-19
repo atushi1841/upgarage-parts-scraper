@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "upgarage-parts-mcp": {
+      "name": "Japan Used Car & Bike Parts MCP",
+      "type": "stdio",
+      "description": "MCP server wrapping upgarage-parts-scraper Apify actor.",
+      "command": "python3",
+      "args": [
+        "src/stdio_main.py"
+      ],
+      "repo": "https://github.com/atushi1841/upgarage-parts-scraper"
+    }
+  }
+}
