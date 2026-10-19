@@ -73,3 +73,13 @@ Install via MCP: add to your MCP config:
 ```json
 {"mcpServers": {"upgarage-parts-mcp": {"command": "python3", "args": ["src/stdio_main.py"]}}}
 ```
+
+## Smithery
+
+[![Smithery](https://smithery.ai/server/upgarage-parts-mcp/badge)](https://smithery.ai/server/upgarage-parts-mcp)
+
+Install via Smithery:
+
+```bash
+npx @smithery/cli install upgarage-parts-mcp --client claude
+```
