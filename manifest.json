@@ -1,0 +1,16 @@
+{
+  "manifest_version": "0.4",
+  "name": "upgarage-parts-mcp",
+  "display_name": "Japan Used Car & Bike Parts MCP",
+  "version": "1.0.0",
+  "description": "Used car & motorcycle parts from upgarage.com. 800K+ items across 280 stores. Live data via Apify actor (fruitful_quintessence/upgarage-parts-scraper). Gumroad: https://atushi5.gumroad.com/l/kutuxe",
+  "author": {
+    "name": "Kensho Project",
+    "email": "atushi1841@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atushi1841/upgarage-parts-scraper"
+  },
+  "homepage": "https://github.com/atushi1841/upgarage-parts-scraper"
+}
