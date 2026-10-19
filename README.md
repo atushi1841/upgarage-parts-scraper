@@ -60,3 +60,16 @@ Pay-per-event: small fee per result. Use `statsMode` to get aggregated price sta
 ## Changelog
 
 - **0.1** — Initial release: keyword search, full part fields, stats mode.
+
+## MCP Server & Registry
+
+This scraper is also available as an MCP server for AI agents:
+
+- **MCP Registry**: `io.github.atushi1841/upgarage-parts-mcp`
+- **Apify Store**: https://apify.com/fruitful_quintessence/upgarage-parts-scraper
+- **Gumroad**: https://atushi5.gumroad.com/l/kutuxe
+
+Install via MCP: add to your MCP config:
+```json
+{"mcpServers": {"upgarage-parts-mcp": {"command": "python3", "args": ["src/stdio_main.py"]}}}
+```
