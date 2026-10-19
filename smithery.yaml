@@ -1,0 +1,10 @@
+# Smithery.ai configuration
+description: "MCP server for Upgarage Parts Scraper. Apify actor: fruitful_quintessence/upgarage-parts-scraper"
+repositoryUrl: https://github.com/atushi1841/upgarage-parts-scraper
+startCommand:
+  type: stdio
+  commandFunction: |
+    (config) => ({
+      command: 'python3',
+      args: ['src/stdio_main.py']
+    })
